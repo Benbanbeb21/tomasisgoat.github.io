@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toumas is goated</title>
-    <script>
-        function checkPassword() {
-            var password = prompt("Enter the password:");
-            if (password !== "jackpine") {
-                alert("Incorrect password. Access denied.");
-                window.location = "https://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif" // Redirect to a blank page
-            }
+    <title>Fullscreen Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
-    </script>
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
-<body onload="checkPassword()">
-    <h1>Hello!</h1>
-    <iframe src="https://learn.microsoft.com/en-us/training/modules/implement-common-integration-features-finance-ops/10-exercise-1" width="600" height="400" title="Embedded Website"></iframe>
+<body>
+    <iframe src="https://learn.microsoft.com/en-us/training/modules/implement-common-integration-features-finance-ops/10-exercise-1" allowfullscreen></iframe>
 </body>
 </html>
